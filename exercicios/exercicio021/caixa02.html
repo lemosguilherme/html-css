@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        header {
+            background-color: aquamarine;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+            border-radius: 10px;
+        }
+        main {
+            background-color: bisque;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+            margin: 50px 40px 50px 40px;
+            padding: 1px 5px;
+            border-radius: 10px;
+        }
+        main > section > article > p {
+            text-align: justify;
+        }
+        footer{
+            text-align: center;
+            background-color: #5f9ea07e;
+            font-weight: bold;
+            padding: 10px;
+            box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.425);
+            border-radius: 10px;
+        }
+        footer > img {
+            display: none;
+            margin:auto;
+            padding: 10px;
+        }
+        footer:hover > img {
+            display: block;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color:black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis nisi vitae quibusdam facere eius excepturi, eos natus quisquam iste consectetur hic nemo similique recusandae amet vel earum mollitia magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore at est eveniet cumque quo amet. Voluptatibus voluptate numquam quis, voluptas nemo, nostrum aut ut harum dolore impedit aperiam sapiente autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veritatis, non velit quasi saepe perferendis laborum dignissimos autem quaerat ipsum nisi eos quam inventore, quas excepturi ab sequi alias tempore!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>Desenvolvido por Guilherme</div>
+        <img src="Teste.JPG" alt="foto">
+    </footer>
+</body>
+</html>

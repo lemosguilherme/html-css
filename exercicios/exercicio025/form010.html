@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 9</title>
+    <style>
+        div {
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="idano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="idano" min="1900" max="2023" oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="ididade">Sua idade é: </label>
+            <output id="ididade">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            ididade.innerHTML = Number(atual) - Number(idano.value)
+        }
+    </script>
+</body>
+</html>

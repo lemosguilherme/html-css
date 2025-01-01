@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    font-family: 'Montserrat', sans-serif; 
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+}
+header {
+    position: relative;
+    height: 910px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center; 
+    
+}
+div.capa {
+    background-image: url("../imagens/folha3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 60%;
+    transition: 2s;
+}
+div.capa1 {
+    background-image: url("../imagens/mulher-lado.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(0, 128, 0, 0.295);
+    height: 800px;
+    width: 30%;  
+    right: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+}
+div.capa h1 {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 910px;
+    width: 100%;
+    left: 8%;
+    font-size: 15em;
+    user-select: none;
+    text-shadow: 14px 9px 20px rgba(0, 0, 0, 0.397);
+    z-index: 100;
+}
+nav.menu {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 100;
+}
+nav.menu h1 {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+}
+nav.menu a {
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.4em;
+}
+nav.menu a:hover{
+    transform: translateX(-30px);
+}
+section.container0 {
+    opacity: 0.1;
+    height: 100vh;
+    width: 100%;
+    margin-block-start: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container0 .img0 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+section.container1 {
+    margin-top: 100px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.container1 .imagem1{
+    position: relative;
+    background-image: url("../imagens/mulher-produto.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    z-index: -1; 
+    height: 100vh;
+    width: 60%;
+}
+.container1 .texto{
+    position: relative;
+    background-color: #DBFFDA;  
+    height: 90vh;
+    z-index: 100;
+    width: 40%;
+    right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container1 .texto h1,p {
+    padding: 10px;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 10px;
+}
+section.container2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0px 100px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.container2 .caixa1 {
+    background-image: url("../imagens/produto1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 30%;
+    transition: 1s;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.450)
+}
+.container2 .img1{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    transition: 1s;
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.350);
+    
+}
+.container2 .marca {
+    writing-mode: vertical-lr;
+    height: 100vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.container2 .marca h1 {
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.781);
+}
+.container2 .caixa2{
+    background-image: url("../imagens/produto2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 30%;
+    transition: 1s;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.450)
+}
+.container2 .img2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    transition: 1s;
+    box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.350);
+}
+.contato {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contato .redes {
+    position: relative;
+    background-color: rgb(248, 239, 224);
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    left: 3%;
+}
+.contato .redes h1 {
+    opacity: 0.3;
+    font-size: 4em;
+}
+.contato .redes a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    font-size: 1.7em;
+}
+.contato .imgfinal {
+    background-color: rgba(0, 128, 0, 0.295);
+    background-image: url("../imagens/contato2.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 40%;
+    margin-top: 100px;
+    z-index: -1;
+}
